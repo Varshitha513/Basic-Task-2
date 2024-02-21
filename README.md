@@ -5,21 +5,31 @@ Basic Task-2:  **Dogs vs. Cats Classification**
 
 To develop this project we need to prepare and organise the dataset-
 As the dataset required for this project is very big, it is difficult to download and upload the files while working instead of this we can retreive the dataset from the kaggle through these steps:
+
 **# Dataset - https://www.kaggle.com/datasets/salader/dogs-vs-cats**
+
 1.Through the above we can see the dogs-vs-cats dataset in the kaggle, in this page we have to click on our profile which appears on the top of page in that go to the account, then the account page of our profile will open there we can see the API: in that click on "create API token" so when we click that "kaggle.json" file will be download. Through this kaggle.json file we easily prepare our dataset without downloading.
+
 2.Now upload the kaggle.json file in our working google colab 
+
 **!mkdir -p ~/.kaggle
 !cp kaggle.json ~/.kaggle/**
+
 So, after uploading the kaggle.json file we need to run the above code in our colab notebook
 These commands are commonly used when you want to authenticate and interact with the Kaggle platform through its API. The kaggle.json file typically contains your Kaggle API key, allowing you to use the Kaggle CLI (Command-Line Interface) to download datasets, submit competition entries, and perform other actions from the command line
+
 3.Then again come to dogs-vs-cats dataset page in kaggle,there we can find the Three dots,click on it now we can see "copy API command" click on it to copy now paste that in our colab notebook.
-This is the API command  **!kaggle datasets download -d salader/dogs-vs-cats**
+This is the API command     **!kaggle datasets download -d salader/dogs-vs-cats**
+
 This command helps to download and prepare the dataset directly in the colab notebook. So now when refresh the files in notebbok we can see the dogs-vs-cats.zip file.
+
 4. We have to unzip the file to organise the dataset into train and test datasets by using this code:
+
 **import zipfile
 zip_ref = zipfile.ZipFile('/content/dogs-vs-cats.zip', 'r')
 zip_ref.extractall('/content')
 zip_ref.close()**
+
 Now, when we refresh the files in the colab notebook we can see the unzip file of dogs-vs-cats dataset along with train and test datasets seperately.
 So, now we have all the necessary requirements to do the project
 
