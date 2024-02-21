@@ -10,7 +10,7 @@ As the dataset required for this project is very big, it is difficult to downloa
 
 1.Through the above we can see the dogs-vs-cats dataset in the kaggle, in this page we have to click on our profile which appears on the top of page in that go to the account, then the account page of our profile will open there we can see the API: in that click on "create API token" so when we click that "kaggle.json" file will be download. Through this kaggle.json file we easily prepare our dataset without downloading.
 
-2.Now upload the kaggle.json file in our working google colab 
+2.Now upload the "kaggle.json" file in our working google colab 
 
 !mkdir -p ~/.kaggle
 
