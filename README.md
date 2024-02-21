@@ -13,6 +13,7 @@ As the dataset required for this project is very big, it is difficult to downloa
 2.Now upload the kaggle.json file in our working google colab 
 
 !mkdir -p ~/.kaggle
+
 !cp kaggle.json ~/.kaggle/
 
 So, after uploading the kaggle.json file we need to run the above code in our colab notebook
@@ -28,8 +29,11 @@ This command helps to download and prepare the dataset directly in the colab not
 4. We have to unzip the file to organise the dataset into train and test datasets by using this code:
 
 import zipfile
+
 zip_ref = zipfile.ZipFile('/content/dogs-vs-cats.zip', 'r')
+
 zip_ref.extractall('/content')
+
 zip_ref.close()
 
 Now, when we refresh the files in the colab notebook we can see the unzip file of dogs-vs-cats dataset along with train and test datasets seperately.
