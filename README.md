@@ -12,8 +12,9 @@ As the dataset required for this project is very big, it is difficult to downloa
 
 2.Now upload the kaggle.json file in our working google colab 
 
-**!mkdir -p ~/.kaggle**
-**!cp kaggle.json ~/.kaggle/**
+**!mkdir -p ~/.kaggle
+
+!cp kaggle.json ~/.kaggle/**
 
 So, after uploading the kaggle.json file we need to run the above code in our colab notebook
 These commands are commonly used when you want to authenticate and interact with the Kaggle platform through its API. The kaggle.json file typically contains your Kaggle API key, allowing you to use the Kaggle CLI (Command-Line Interface) to download datasets, submit competition entries, and perform other actions from the command line
